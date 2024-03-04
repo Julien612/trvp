@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="index.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap" rel="stylesheet">  
+
+    <script type="module" src="index.js"></script>
+    
+    <title>Custom Task Manager</title>
+</head>
+<body>
+    <header class="app-header" id="app-header">
+        <h1 class="app-header_app-name">Business lunch</h1>
+        <div class="app-header_user-and-controls">
+            <div class="user-info">
+                <div class="user-info_avatar"></div>
+                <span class="user-info_username">Administrator</span>  
+            </div>
+            <label class="toggle-switch" id="theme-switch">
+                <input type="checkbox" class="toggle-switch_checkbox" />
+                <div class="toggle-switch_slider"></div>
+            </label>
+        </div>
+    </header>
+    <main class="app-main" id="app-main">
+        <ul class="tasklists-list">
+            <li class="tasklists-list_item tasklist-adder">
+                <button type="button" class="tasklist-adder_btn">
+                    &#10010; Add menu
+                </button>
+                
+                <div class="dropdown-add-menu">
+                    <button class="dropbtn">Week day</button>
+                    <div class="dropdown-content">
+                        <a class="mon-weekday">Monday</a>
+                        <a class="tue-weekday">Tuesday</a>
+                        <a class="wed-weekday">Wednesday</a>
+                        <a class="thu-weekday">Thursday</a>
+                        <a class="fri-weekday">Friday</a>
+                        <a class="sat-weekday">Saturday</a>
+                        <a class="sun-weekday">Sunday</a>
+                    </div>
+                </div>
+                        
+            </li>
+        </ul>
+
+    </main>
+<!--
+    <dialog class="app-modal" id="modal-add-task">
+        <form class="app-modal_form">
+            <label for="modal-add-task-input" class="app-modal_question">
+            Введите название новой задачи:
+            </label>
+            <input type="text" id="modal-add-task-input" class="app-modal_input" />
+            <div class="app-modal_controls">
+                <button type="button" class="app-modal_btn modal-ok-btn">OK</button>
+                <button type="button" class="app-modal__btn modal-cancel-btn">0тмена</button>
+            </div>
+        </form>
+    </dialog>
+    <dialog class="app-modal" id="modal-edit-task">
+        <form class="app-modal_form">
+            <label for="modal-edit-task-input" class="app-modal_question">
+            Введите новое название задачи:
+            <label>
+            <input type="text" id="modal-edit-task-input" class="app-modal_input" />
+            <div class="app-modal_controls">
+            <button type="button" class="app-modal_btn modal-ok-btn">OK</button>
+            <button type="button" class="app-modal_btn modal-cancel-btn">Отмена</button>
+            </div>
+        <form>
+    </dialog>
+    <dialog class="app-modal" id="modal-delete-task">
+        <form class="app-modal_form">
+            <label class="app-modal_question">
+            </label>
+            <div class="app-modal_controls">
+            <button type="button" class="app-modal_btn modal-ok-btn">OK</button> 
+            <button type="button" class="app-modal_btn modal-cancel-btn">0тмена</button>
+            </div>
+        </form>
+        </dialog>-->
+    <dialog class="app-notifications" id="app-notifications">
+    </dialog>
+
+</body>
+    
+    
+    
+</html>
+
